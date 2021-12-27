@@ -1,6 +1,6 @@
-#Livro Caixa API
+# Livro Caixa API
 
-##Uma API de Livro Caixa com Java e Spring Boot 
+## Uma API de Livro Caixa com Java e Spring Boot 
 
 _by Celso R. Vitorino_
 ***
