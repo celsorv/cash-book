@@ -1,14 +1,11 @@
-#Livro Caixa API
+# Livro Caixa API
 
-##Uma API de Livro Caixa com Java e Spring Boot 
-
-_by Celso R. Vitorino_
-***
+## Uma API de Livro Caixa com Java e Spring Boot 
 
 **Além do fluxo de caixa, permite controlar a movimentação de outras contas, como bancos por exemplo, uma vez que é possível cadastrar inúmeras contas.**
 
 **Com os centros de custo, é possível também ter um plano de contas gerencial e através deste, controlar receitas, despesas, em diferentes níveis de totalização.**
-***
+
 
 ```
 Mapa de Centro de Custo
