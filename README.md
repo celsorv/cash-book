@@ -1,6 +1,5 @@
 # Livro Caixa API
-
-## Uma API de Livro Caixa com Java e Spring Boot 
+## Uma API de Livro Caixa com Java e Spring Boot
 
 **Além do fluxo de caixa, permite controlar a movimentação de outras contas, como bancos por exemplo, uma vez que é possível cadastrar inúmeras contas.**
 
@@ -39,5 +38,5 @@ Tecnologias utilizadas:
 - Swagger
 ***
 
-
+:: Developed by [CelsoRV](https://github.com/celsorv)
 
