@@ -6,6 +6,7 @@
 
 **Com os centros de custo, é possível também ter um plano de contas gerencial e através deste, controlar receitas, despesas, em diferentes níveis de totalização.**
 
+** Exceções e códigos de retorno da API gerenciados por um Exception Handler.** 
 
 ```
 Mapa de Centro de Custo
