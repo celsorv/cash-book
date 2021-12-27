@@ -13,12 +13,3 @@ public enum TransactionType {
     private final String description;
 
 }
-
-/*
-
-{
-    "description": "Agua",
-    "type": "DEB"
-}
-
- */
