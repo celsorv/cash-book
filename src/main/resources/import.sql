@@ -1,0 +1,36 @@
+INSERT INTO ACCOUNT (id, description, opening_balance_amount, opening_balance_date) VALUES (1, 'Cash', 350.00, '2020-12-31');
+INSERT INTO ACCOUNT (id, description, opening_balance_amount, opening_balance_date) VALUES (2, 'Bank', 7843.00, '2020-12-31');
+
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account) VALUES ( 1, 'Receita Bruta', '1', false);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 2, 'Receita de Vendas de Produtos', '1.1', false, 1);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 3, 'Equipamentos de Monitoramento', '1.1.1', true, 2);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 4, 'Equipamentos de Vigilância', '1.1.2', true, 2);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 5, 'Receita de Prestação de Serviços', '1.2', false, 1);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 6, 'Mensalidade de Monitoramento', '1.2.1', true, 5);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 7, 'Consultoria de Segurança', '1.2.2', true, 5);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account) VALUES ( 8, 'Custos', '2', false);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES ( 9, 'Custos Fixos', '2.1', false, 8);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (10, 'Compra de Materiais', '2.1.1', true, 9);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (11, 'Custos Variáveis', '2.2', false, 8);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (12, 'Reparo de Produtos', '2.2.1', true, 11);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account) VALUES (13, 'Despesas', '3', false);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (14, 'Despesas com RH', '3.1', false, 13);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (15, 'Salários', '3.1.1', true, 14);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (16, '13. Salários / Férias', '3.1.2', true, 14);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (17, 'Pro Labore', '3.1.3', true, 14);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (18, 'Despesas Operacionais', '3.2', false, 13);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (19, 'Água e Luz', '3.2.1', true, 18);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (20, 'Telefone', '3.2.2', true, 18);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (21, 'Internet', '3.2.3', true, 18);
+INSERT INTO COST_CENTRE (id, description, classification, analytical_account, subaccount_id) VALUES (22, 'Aluguel', '3.2.4', true, 18);
+
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-01', 'Venda a vista', 'CREDIT', 3060.00, 3);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-01', 'Venda a prazo', 'CREDIT', 130.00, 3);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-02', 'Venda a prazo', 'CREDIT', 245.00, 4);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-03', 'Venda a prazo', 'CREDIT', 10280.00, 3);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-03', 'Venda a vista', 'CREDIT', 210.00, 4);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-03', 'Pago telefone', 'DEBIT', 128.43, 20);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-04', 'Pago energia', 'DEBIT', 231.68, 19);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-05', 'Mensalidade Cliente 103', 'CREDIT', 69.90, 6);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-05', 'Mensalidade Cliente 85', 'CREDIT', 71.56, 6);
+INSERT INTO TRANSACTION (account_id, date, narration, type, value, cost_centre_id) VALUES (1, '2021-12-08', 'Compra Kit Alarmes', 'CREDIT', 8360.90, 10);
