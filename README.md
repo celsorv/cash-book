@@ -2,7 +2,7 @@
 
 ## Uma API de Livro Caixa com Java e Spring Boot 
 
-by Celso R. Vitorino _(celsorv)_(https://github.com/celsorv/cash-book)
+[by Celso R. Vitorino](https://github.com/celsorv/cash-book)
 
 
 **Além do fluxo de caixa, permite controlar a movimentação de outras contas, como bancos por exemplo, uma vez que é possível cadastrar inúmeras contas.**
