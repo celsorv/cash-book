@@ -38,5 +38,5 @@ Tecnologias utilizadas:
 - Swagger
 ***
 
-:: Developed by [CelsoRV](https://github.com/celsorv)
+::: Developed by [CelsoRV](https://github.com/celsorv)
 
