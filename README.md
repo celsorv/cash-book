@@ -2,7 +2,7 @@
 
 ## Uma API de Livro Caixa com Java e Spring Boot 
 
-_by Celso R. Vitorino_
+_by CelsoRV_
 ***
 
 **Além do fluxo de caixa, permite controlar a movimentação de outras contas, como bancos por exemplo, uma vez que é possível cadastrar inúmeras contas.**
