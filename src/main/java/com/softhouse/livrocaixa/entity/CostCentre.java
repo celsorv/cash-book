@@ -28,9 +28,6 @@ public class CostCentre {
     @ManyToOne(fetch = FetchType.LAZY)
     private CostCentre subaccount;
 
-//    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
-//    private List<Account> accounts = new ArrayList<>();
-
     @Transient
     public boolean isRoot() {
         return subaccount == null;
